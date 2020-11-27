@@ -1,6 +1,7 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-export default function About() {
+function About() {
     return (
         <div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -8,3 +9,12 @@ export default function About() {
         </div>
     )
 }
+
+const mapStateToProps = (state) => {
+    console.log("About State", state)
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps)(About)

@@ -11,6 +11,8 @@ import Signup from './Components/Signup';
 import Dashboard from './Components/Dashboard';
 import Login from './Components/Login';
 import Profile from './Components/Profile';
+import Albums from './Components/Albums';
+import Calculate from './Components/Calculate';
 
 export default class App extends Component {
   constructor(props) {
@@ -60,6 +62,9 @@ export default class App extends Component {
           <Route exact path="/login" component={Login}/>
           <Route exact path="/dashboard" component={Dashboard}/>
           <Route exact path="/profile/:color" component={Profile}/>
+          <Route exact path="/album" component={Albums}/>
+          <Route exact path="/calculate" component={Calculate}/>
+
         </Switch>
       </div>
     )
